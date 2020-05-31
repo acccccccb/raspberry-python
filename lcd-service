@@ -1,21 +1,21 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          temperature-control.py
+# Provides:          lcd.py
 # Required-Start:    $network $local_fs $remote_fs $syslog
 # Required-Stop::    $network $local_fs $remote_fs $syslog
 # Should-Start:      $all
 # Should-Stop:       $all
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Temperature-control-system
+# Short-Description: lcd service
 # Description:       Better then better
 ### END INIT INFO
-#NAME = fan
+#NAME = lcd
 export HOME="/home/pi"
 export USER="root"
-#PIDFILE = /home/pi/raspberry-python/temperature-control.py
+#PIDFILE = /home/pi/raspberry-python/lcd.py
 
-python /home/pi/raspberry-python/temperature-control.py
+# python /home/pi/raspberry-python/temperature-control.py
 # python3 /home/pi/raspberry-python/camera.py
-# python /home/pi/raspberry-python/lcd.py
+python /home/pi/raspberry-python/lcd.py
 exit 0
